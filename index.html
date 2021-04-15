@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>테스트 쇼핑몰</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <h2>회원가입</h2>
+        <div id="joinlist">
+            <ul>
+                <li>
+                    <input type="text" placeholder="이름">
+                </li>
+                <li>
+                    <input type="text" placeholder="아이디">
+                </li>
+                <li>
+                    <input type="password" placeholder="비밀번호">
+                </li>
+                <li>
+                    <input type="password" placeholder="비밀번호 확인">
+                </li>
+                <li>
+                    <input type="text" placeholder="이메일">
+                </li>
+                <li>
+                    <select id="year" class="birth">
+                        <option>1970</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                        <option>1999</option>
+                        <option>1998</option>
+                        <option>1997</option>
+                        <option>1996</option>
+                        <option>1995</option>
+                        <option>1994</option>
+                        <option>1993</option>
+                    </select>
+
+                    <select id="month" class="birth">
+                        <option value="">월</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                    </select>
+
+                    <select id="day" class="birth">
+                        <option value="">일</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                </li>
+
+                <li>
+                    <input type="radio" value="male" name="gender"><span>남</span>
+                    <input type="radio" value="female" name="gender"><span>여</span>
+                </li>
+                <li>
+                    <input type="text" placeholder="휴대폰번호">
+                    <button type="button">인증</button>
+                </li>
+                <li>
+                    <input type="text" placeholder="SMS 인증번호">
+                    <button type="button">확인</button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="ToS">
+            <span>이용약관</span>
+            <iframe src="source/menbership.html" frameborder="0" id="membership"></iframe>
+        </div>
+
+        <div id="agechk">
+            <div id="chkTxt">
+                <input type="checkbox" id="chkbox">
+                <span>14세 이상입니다.(필수)</span>
+            </div>
+
+            <p>
+                * 회원가입에 필요한 최소한의 정보만 입력 받음으로써
+                고객님의 개인정보 수지을 최소화하고 <br>
+                편리한 회원가입을 제공합니다.
+
+            </p>
+
+        </div>
+
+        <div id="infoChkbox">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="wholechk"><span>전체동의</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="subchkboxArea">
+                            <span>
+                                <input type="checkbox" id="chk1" class="subchkbox">이용약관
+                            </span>
+                            <span>
+                                <input type="checkbox" id="chk2" class="subchkbox">개인정보 수집 및 이용안내
+                            </span>
+                            <span>
+                                <input type="checkbox" id="chk3" class="subchkbox">개인정보 제3자 제공
+                            </span>
+                            <span>
+                                <input type="checkbox" id="chk4" class="subchkbox">개인정보 처리위탁
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div id="jBtn">
+        <button type="button" id="joinBtn">동의하고 가입완료</button>
+        </div>
+    </div>
+
+</body></html>

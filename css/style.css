@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+a   {  text-decoration: none;  }
+a:link        {  color: #333;  }
+a:visited    {  color: #333;  }
+a:hover     {  color: #333;  }
+a:active     {  color: #333;  }
+
+ul {  list-style: none;  }
+/*reset*/
+
+/*안내선*/
+/*div#wrap {  border: 1px solid #000;  }*/
+
+/*안내선*/
+
+
+div#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+/*회원가입 입력란*/
+div#joinlist ul {
+    width: 700px;
+    margin: 0 auto;
+}
+
+div#joinlist li{
+    height: 60px;
+    border: 1px solid #ccc;
+}
+div#joinlist li:not(:first-child) {
+    border-top: none;
+}
+
+#joinlist li input {
+    width: 450px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+#joinlist li input::placeholder {
+    color: #333;
+    font-size: 16px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+}
+
+#joinlist li .birth {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+
+#joinlist li:nth-child(6) {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#joinlist li:nth-child(7) {
+    padding-top: 15px;
+}
+#joinlist li:nth-child(7)>span{
+    font-weight: 800;
+}
+
+#joinlist li:nth-child(7)>input {
+    width: 22px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+}
+
+#joinlist li:nth-child(8),li:nth-child(9) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#joinlist li button {
+    height: 32px;
+    font-weight: 700;
+    padding: 6px 30px;
+    margin-top: 13px;
+    margin-right: 20px;
+
+    border: 1px solid #aaa;
+    background-color: #f5f5f5;
+    outline: none;
+    cursor: pointer;
+}
+/*회원가입 입력란*/
+
+
+
+/*이용약관*/
+div#ToS {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+div#ToS span {
+    color: #444;
+    font-weight: 800;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+div#ToS #membership {
+    width: 700px;
+    height: 200px;
+
+    border: 1px solid #bbb;
+    overflow: auto;
+}
+
+div#ToS #membership>iframe {
+    width: 700px;
+    height: 200px;
+}
+/*이용약관*/
+
+
+/*나이인증 체크박스*/
+div#agechk {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+div#agechk input {
+    position: relative;
+    top: 2px;
+}
+
+div#agechk span {
+    color: #a90000;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+div#agechk p {
+    color: #888;
+    line-height: 15px;
+    padding-left: 12px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-indent: -11px;
+}
+/*나이인증 체크박스*/
+
+
+/*개인정보 동의 체크박스*/
+
+div#infoChkbox {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#infoChkbox table,td {
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+#infoChkbox input[type=checkbox] {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+#infoChkbox tr:first-child>td input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+
+#infoChkbox tr:first-child>td span {
+    font-weight: 700;
+}
+
+#infoChkbox #subchkboxArea {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#subchkboxArea span {
+    width: 240px;
+    font-size: 14px;
+    margin-left: 25px;
+    line-height: 30px;
+}
+
+
+div#jBtn {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+#joinBtn {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #000;
+    outline: none;
+    cursor: pointer;
+}
+
+/*개인정보 동의 체크박스*/
+
+
+
